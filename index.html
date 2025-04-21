@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--Specifica il tipo di documento e la lingua-->
+<html lang="it">
+<head>
+    <!--Dichiarazione del charset per la codifica del documento-->
+    <meta charset="UTF-8"> 
+    <!--Meta tag per corretta visualizzazione su dispositivi mobili-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titolo della pagina visualizzato nel browser-->
+    <title>Report Sostenibilità Olio Carli</title>
+    <!-- Importazione di Bootstrap per lo stile-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!--Importazione di Font Awesome per le icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Collegamento al file CSS personalizzato-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <!--Nome del sito con link che riporta la pagina alla sezione home-->
+            <a class="navbar-brand fw-bold" href="#home">Report Sostenibilità Olio Carli</a>
+            <!--Bottone per espandere o comprimere la navbar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!--icona per il pulsante toogler-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementi della navbar-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--lista di link allineati a destra nella navbar-->
+                <ul class="navbar-nav ms-auto">
+                    <!--collegamenti alla sezione Home-->
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <!--collegamenti alla sezione Chi siamo-->
+                    <li class="nav-item"><a class="nav-link" href="#about">Chi siamo</a></li>
+                    <!--collegamenti alla sezione Servizi-->
+                    <li class="nav-item"><a class="nav-link" href="#services">Servizi</a></li>
+                    <!--collegamenti alla sezione download-->
+                    <li class="nav-item"><a class="nav-link" href="#downloads">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sezioni del sito -->
+    <section id="home" class="section text-center d-flex align-items-center">
+        <!--Sezione HOME con layout centrato e allineamento verticale-->
+        <div class="container">
+            <!--Titolo principale del sito-->
+            <h1 class="display-3 fw-bold">Fratelli Carli:</h1>
+            <!--Breve descrizione-->
+            <p class="lead">La Storia del Buon Gusto Italiano dal 1911</p>
+            <!--Logo dell'azienda-->
+            <img src="img/logo-carli.svg" alt="Logo Fratelli Carli" >
+        </div>
+    </section>
+    <!--Sezione Chi siamo con testo centrato-->
+    <section id="about" class="section text-center">
+        <!--Contenitore per layout-->
+        <div class="container">
+            <!--Titolo della sezione-->
+            <h2 class="fw-bold">Chi siamo</h2>
+            <!--Righe di contenuto con margine superiore-->
+            <div class="row mt-2">
+                <!--Colonna per il testo descrittivo-->
+            <div class="col-md-4">
+                <!--Descrizione dell'azienda-->
+                <div class="descrizione">Siamo Fratelli Carli, un'azienda ligure con una storia lunga oltre un secolo.
+                Da quattro generazioni, ci impegniamo a portare sulla tua tavola prodotti dai sapori unici e inconfondibili, realizzati con la maestria e la cura che solo l'amore per la tradizione unito allo spirito di innovazione può realizzare.
+                Forse ci conosci già per il nostro Olio Carli, diventato un simbolo di eccellenza in Italia e nel mondo, ma Fratelli Carli è molto di più: un universo di Specialità Dolci e Salate che delizieranno il tuo palato.</div>
+                 </div>
+                 <!--Colonna dedicata all'immagine-->
+                <div class="col-md-2">
+                    <!--Immagine che rappresenta la storia e la tradizione dell'azienda-->
+                <img src="img/chi-siamo.jpg" alt="Fratelli Carli - Storia e Tradizione">
+            </div>
+        </div>
+        </div>
+            
+    </section>
+    <!--Sezione Servizi con testo centrato-->
+    <section id="services" class="section text-center">
+        <!--Contenitore per layout-->
+        <div class="container">
+            <!--Titolo della sezione-->
+            <h2 class="fw-bold">I pilastri della Sostenibilità</h2>
+            <!--Breve descrizione-->
+            <p>Su cosa ci basiamo per tenere alti i nostri standard</p>
+            <!--Righe  di contenuto con colonne per ogni pilastro-->
+            <div class="row mt-4">
+                <!--Prima colonna: Responsabilità, etica e trasparenza-->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/responsabilita-etica.jpg" alt="Fratelli Carli - Responsabilità etica e trasparenza">
+                    <!--Titolo del pilastro-->
+                    <h4>Responsabilità, etica e trasparenza</h4>
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo1" aria-expanded="false">
+                      </button>
+                      <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                      <div id="testo1" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro "Resposabilità, etica e trasparenza"-->
+                            <p>Il sistema di governance di Fratelli Carli è strutturato per garantire trasparenza, efficienza, responsabilità e legalità. L'azienda si impegna a combattere la corruzione e promuovere una condotta responsabile, basata sui pilastri di sostenibilità e sullo statuto aziendale.</p>
+                            <p>Comitato di Sostenibilità (CO.SO.): Istituito nel 2013, è composto da 13 membri e svolge funzioni propositive e consultive per promuovere l'innovazione sostenibile, definendo obiettivi e azioni in tal senso. È presieduto da un membro del Consiglio di Amministrazione (CdA) e coordina l'impegno dell'azienda verso un modello di sviluppo sostenibile.</p>
+                            <p>Comitato di Direzione: Responsabile della gestione degli impatti dell'organizzazione sull'economia, l'ambiente e le persone. È composto dai dirigenti apicali e valuta in modo olistico le questioni, considerando le interconnessioni e le implicazioni a livello organizzativo.</p>
+                            <p>Remunerazione: Il CdA amministra un budget determinato dall'Assemblea, ripartito tra i membri in base agli incarichi. La retribuzione per la classe dirigenziale include una componente fissa e una variabile, legata al raggiungimento degli obiettivi aziendali. Non sono previsti bonus di ingresso, ma viene rispettato il pagamento del TFR.</p>
+                            <p>Gestione delle problematiche: Le singole funzioni aziendali gestiscono le possibili problematiche relative ai pilastri di sostenibilità e allo statuto, raccogliendo e valutando le segnalazioni degli stakeholder e adottando azioni di rimedio appropriate.</p>
+                            <p>Whistleblowing: Nel 2023 è stato istituito un canale di whistleblowing per consentire ai dipendenti e alle altre parti interessate di segnalare criticità in modo anonimo e protetto.</p>
+                            <p>Associazioni di settore: FEDEROLIO, MUSEIMPRESA, NETCOMM, AIDAF, UNIONE INDUSTRIALI, CONFCOMMERCIO</p>
+                            <p>B Corp e Società Benefit: Fratelli Carli è stata la prima realtà produttiva italiana a ottenere la certificazione B Corp nel 2014. Nel dicembre 2019 ha adottato la forma giuridica di Società Benefit, impegnandosi a perseguire finalità di beneficio comune oltre al profitto.</p>
+                            <p>Certificazione B Corp: Fratelli Carli ha ottenuto 90 punti nel 2014, 97 nel 2016 e 98,3 nel 2019, misurandosi nuovamente con lo standard B Impact Assessment nel processo di ricertificazione che si concluderà nel 2024. Dal 2016 al 2021 è stata premiata tra le migliori B Corp al mondo per le attività a salvaguardia dell’ambiente.</p>
+                     </div>
+                </div>
+                <!--Seconda colonna: Persone-->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/persone.jpg" alt="Fratelli Carli - Persone">
+                    <!--Titolo del pilastro-->
+                    <h4>Persone</h4>
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo2" aria-expanded="false">
+                    </button>
+                    <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                    <div id="testo2" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro "Persone"-->
+                            <p>Vogliamo essere soprattutto una grande comunità di persone, clienti, dipendenti: un insieme di aspirazioni, motivazioni, capacità che creano valore. Persone speciali che incontriamo e con cui lavoriamo ogni giorno per dare vita ad un grande progetto comune: contribuire ad un modello di socialità basato sulla condivisione del benessere, il rispetto dei diritti, la partecipazione alla vita della collettività.</p>                               
+                            <p>Massimo Belmonte Direttore Risorse Umane</p>
+                            <p>OBIETTIVI/RISULTATI 2023</p>
+                            <p>DIPENDENTI: - Promuovere la salute sul luogo di lavoro - Implementare un nuovo piano welfare per i dipendenti - Incrementare il numero di ore di formazione, in particolare sulla sostenibilità - Agevolare le pari opportunità a tutti i livelli aziendali</p>
+                            <p>              Oltre 1100 le visite di prevenzione oncologica gratuite svolte in azienda dal 2016 - Quasi il 45% dei dipendenti ha usufruito del welfare aziendale - +67% incremento ore di formazione sulla sostenibilità - 52% la percentuale di donne presenti in azienda (+2% dal 2021) 378 i dipendenti al 31-12-2023</p>
+                            <p>CLIENTI:    - Far crescere l'intero customer care per farlo diventare luogo di incontro speciale per i clienti - Mantenere elevatissimi standard di qualità di servizio per i clienti - Implementare costantemente i servizi offerti ed i canali di contatto con l'azienda per tutti i clienti al passo con l'evoluzione tecnologica</p>
+                            <p>              1700 le ore di formazione del Centro Ordini per rispondere sempre meglio alle esigenze dei clienti - 9009 il numero di conversazioni via chat con i clienti di ogni nazione servita - 60 il numero di operatrici del nostro Centro Ordini Italia e Estero - 99,26% le consegne a domicilio dei nostri prodotti effettuate senza errori e ritardi</p>
+                            <p>COMUNITA':  - Contribuire ad iniziative che agiscono dove vi sono condizioni svantaggiate, promuovendo accesso all'acqua, alle cure e alla ricerca - Sostenere le necessità delle comunità locali anche con la donazione di prodotti</p> 
+                            <p>              2.268.000 i litri di acqua potabile garantiti a progetti idrici nel mondo - +40 le associazioni sostenute con la donazione di nostri prodotti - +9 le tonnellate di prodotti alimentati donati</p>
+                            <p>I DIPENDENTI, UNA STORIA DI FAMIGLIA</p>  
+                            <p>LA SFIDA CHE ABBIAMO AFFRONTATO: La formazione è da sempre un pilastro fondamentale della nostra strategia aziendale: investire per far crescere le competenze e la consapevolezza non solo ci permette di affrontare le sfide del presente, ma ci rende anche attori attivi nel plasmare il futuro dell'azienda. Forti di questa convinzione abbiamo lavorato, in questi anni, per incrementare costantemente anche la formazione interna sui temi ESG (+67% di ore nel 2023) e per renderla sempre più efficace ed esaustiva. Ma come fare per farla diventare più coinvolgente e ingaggiante per tutti i nostri dipendenti e collaboratori? Questa sfida ci ha stimolato ad innovare il modo in cui progettare ed erogare la formazione interna sulla sostenibilità.</p>
+                            <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: Quest'anno il Comitato di Sostenibilità ha lavorato per dare un nuovo volto agli incontri di formazione, coinvolgendo i partecipanti sia prima che durante le sessioni di formazione. È nato così il questionario intitolato “Il nostro Progresso Responsabile: la tua opinione è importante!” che ha raccolto le impressioni, i giudizi ed i suggerimenti dei collaboratori sul Report di Sostenibilità dellazienda e sulle attività e gli obiettivi del Piano di Sostenibilità. Temi che sono stati poi discussi insieme nel corso dei diversi incontri fomativi. Ma abbiamo fatto ancora un passo in più. La formazione in aula è stata preparata con l'approccio dello storytelling, anziché con la modalità tradizionale di presentazione, riuscendo così a trasmettere, in modo accurato e coinvolgente, le molte e fondamentali interconnessioni tra le diverse funzioni e reparti,necessarie per raggiungere sui temi di sostenibilità quei risultati che l'azienda si pone e che spesso sanno andare oltre le aspettative. Più siamo capaci di raccontare alle nostre persone le storie dei progetti e delle iniziative in corso, di rappresentare gli ostacoli affrontati ed i progressi fatti, più possiamo creare cultura della sostenibilità e consapevolezza.</p>
+                            <p>CHE COSA ABBIAMO IMPARATO: L'adozione di una nuova modalità per condividere internamente le attività del nostro Progresso Responsabile ha saputo rendere i concetti più accessibili e tangibili. Ci siamo resi conto di come l'utilizzo di una narrazione strutturata, il coinvolgimento e la richiesta di feedback abbiano ispirato un forte senso di appartenenza e grande  partecipazione: ingredienti indispensabili per affrontare insieme le sfide future.</p>
+                            <p>LA COMUNITA' IL NOSTRO MONDO</p>
+                            <p>Fratelli Carli dimostra il proprio impegno verso le comunità in cui opera attraverso un solido legame territoriale caratterizzato da qualità e durata nel tempo che si concretizza anche nella scelta di personale locale per ogni sito in cui opera. La relazione con il territorio si basa sull'ascolto e mostra una costante attenzione alle esigenze delle persone, supportando attivamente le diverse comunità grazie alla collaborazione con i lavoratori, gli agricoltori e tutti gli stakeholder dell'azienda. La consapevolezza della responsabilità di Fratelli Carli verso il territorio si manifesta anche attraverso iniziative e attività che favoriscono il supporto e il sostegno delle comunità al fine di generare un impatto positivo per esse e mantenere una relazione di collaborazione e fiducia, rimanendo sempre un punto di riferimento.  Per le sale di rappresentanza di tutta l'azienda e per i pranzi serviti nell'Emporio di Imperia, è stato scelto di utilizzare l'Acqua WAMI. WAMI è una B Corp che crea acquedotti nel mondo e si può contribuire alla sua missione semplicemente bevendo: ogni bottiglia WAMI dona, infatti, 100 litri d'acqua a una comunità coinvolta nei suoi progetti idrici. Attraverso il QR code presente sull'etichetta, è possibile conoscere subito la famiglia alla quale è stata garantita l'acqua e scoprire di più sui paesi coinvolti. Grazie a questa collaborazione, nel corso del 2023, Fratelli Carli ha contribuito a far arrivare 2.268.000 litri di acqua a comunità che non avevano accesso a questa risorsa. Nell'ambito del progetto Informafood, che prevede iniziative volte alla promozione del recupero e della distribuzione delle eccedenze alimentari nella città di Imperia, l'azienda ha contribuito all'acquisto di un mezzo di trasporto da donare alla Caritas locale per l'approvvigionamento delle derrate alimentari da distribuire alle persone indigenti. La cooperativa Diana, che ha coordinato questa iniziativa, si è occupata della sensibilizzazione degli esercenti locali per la redistribuzione degli avanzi della giornata e di una serie di incontri e laboratori nelle scuole per far riflettere i più giovani sull'utilizzo consapevole del cibo per evitarne lo spreco. Nell'ambito del progetto Informafood, che prevede iniziative volte alla promozione del recupero e della distribuzione delle eccedenze alimentari nella città di Imperia, l'azienda ha contribuito all'acquisto di un mezzo di trasporto da donare alla Caritas locale per l'approvvigionamento delle derrate alimentari da distribuire alle persone indigenti. La cooperativa Diana, che ha coordinato questa iniziativa, si è occupata della sensibilizzazione degli esercenti locali per la redistribuzione degli avanzi della giornata e di una serie di incontri e laboratori nelle scuole per far riflettere i più giovani sull'utilizzo consapevole del cibo per evitarne lo spreco. Sono ormai molti anni che i doni natalizi per i figli dei dipendenti vengono scelti in modo che siano un gesto di solidarietà, oltre che un momento di felicità. A partire poi dal 2021 si è scelto di sostenere più di una associazione, guardando sempre soprattutto alle necessità dei bambini. I doni natalizi hanno così contribuito, quest'anno, alle attività della Lega del Filo d'Oro, della Fondazione Dynamo Camp, dell'Associazione medici con l'Africa CUAMM e di Unicef.</p>
+                            <p>I CLIENTI</p>
+                            <p>LA SIFDA CHE ABBIAMO AFFRONTATO: L'empatia è un elemento chiave di un servizio eccellente per la cura dei clienti. In un mondo sempre più digitale, il Customer Care gioca un ruolo cruciale nel mantenere la soddisfazione e la fedeltà dei clienti e questo non è facile. Negli ultimi due anni abbiamo lavorato con modalità e strumenti innovativi per far crescere le persone del nostro Customer Care professionalmente ed umanamente. Vivono il loro ruolo nella dimensione collettiva ed aggregante di una “Comunità di Pratiche” e condividono strumenti di lavoro ed esperienze. Uno degli strumenti più efficaci per migliorare l'empatia verso i clienti è l'utilizzo delle Empathy Map che li rappresentano. La mappa è organizzata in 4 quadranti che ci aiutano a comprendere meglio che cosa dice, che cosa pensa, che cosa fa e che cosa sente il cliente, nel momento in cui entra in relazione con il nostro Customer Care.</p>
+                            <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: Integrare questo strumento nella pratica quotidiana non è privo di sfide: ecco come le abbiamo superate. Abbiamo attivato dei laboratori formativi coinvolgendo gli operatori del Customer Care, in particolare i ruoli a diretto contatto telefonico con il cliente. Durante i laboratori gli operatori hanno analizzato la loro esperienza di relazione con i clienti, elaborando le emozioni e le motivazioni di chi si rivolge al Customer Care. Gli operatori hanno lavorato in team confrontandosi tra loro e, utilizzando lo strumento dell'Empathy Map, hanno raggiunto l'obiettivo di personalizzare l'approccio al cliente per rendere sempre migliore l'esperienza con il mondo Fratelli Carli.</p>
+                            <p>CHE COSA ABBIAMO IMPARATO: Per tutti noi, da sempre, il cliente è al centro del nostro impegno quotidiano e il Customer Care, in particolare, forte dell'esperienza e della tradizione di oltre cento anni, sa offrire un servizio eccellente. Abbiamo voluto accogliere la sfida di andare oltre, di adottare nuovi strumenti, di sperimentare per guardare il lavoro da nuove prospettive e poterci ancora migliorare. Non era una scelta scontata, ci siamo messi in gioco ed i nostri sforzi alla fine sono stati premiati. Siamo cresciuti ancora con le nostre persone, sia nella cura del servizio che in spirito di squadra, rivolto sempre alla soddisfazione dei nostri clienti. Viviamo questa missione tutti i giorni.</p>
+                    </div>
+                </div>
+                <!--Terza colonna: Prodotti e Materiali-->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/prodotti-materiali.jpg" alt="Fratelli Carli - Prodotti e Materiali">
+                    <!--Titolo del pilastro-->
+                    <h4>Prodotti e Materiali</h4> 
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo3" aria-expanded="false">
+                    </button>
+                    <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                    <div id="testo3" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro "Prodotti e Materiali"-->
+                        <p>Abbiamo intrapreso un percorso virtuoso che ci porta ad analizzare e migliorare la sostenibilità di ogni fase di vita dei nostri prodotti: dalla coltivazione delle materie prime, alla produzione, dal pack al consumo finale. Solo così possiamo offrire sempre il meglio per i nostri clienti di oggi e per quelli di domani.</p>
+                        <p> Marta Gorlero - Responsabile Marketing e Sviluppo Prodotto - Marcello Porro - Responsabile Confezionamento e Magazzini - Alessandro Anemone - Responsabile Ufficio Acquisti</p>
+                        <p>OBIETTIVI/RISULTATI 2023</p>
+                        <p>PRDOTTI: Continuare ad offrire sempre nuove specialità alimentari preparate con il saper fare della tradizione mediterranea, utilizzando pochi e semplici ingredienti di altissima qualità, come fatte in casa. Portare al 55% le linee di prodotto analizzate con la metodologia di valutazione Sustainability Life Cycle Assessment (SLCA) per quantificare gli impatti ambientali, sociali ed economici dei prodotti. Monitorare attentamente e costantemente gli aspetti nutrizionali, di sicurezza e qualità dei nostri prodotti, per assicurare sempre il massimo livello di eccellenza ai nostri clientI. </p>
+                        <p>         9 i nuovi prodotti - 50% le linee di prodotto con SLCA - 3925 le analisi svolte su tutti i nostri prodotti - 3194 le analisi di prodotto svolte dal nostro laboratorio interno.</p>
+                        <p>MATERIALI: Rinnovare costantemente il pack primario e secondario dei prodotti e degli omaggi perseguendo un miglioramento continuo in termini di sostenibilità - Incrementare la percentuale di materiali, materie prime e specialità alimentari con Certificazioni di sostenibilità e/o prodotte da aziende certificate B Corp o Società Benefit.</p>
+                        <p>           -7% la percentuale di riduzione di CO2 per le nuove etichette Olio EVO Classico - 99,96% la percentuale di cartone FSC utilizzato per tutti i pack - 100% la percentuale di materiali riciclabili nel pack dei nostri oli - 1,10% il peso della plastica sul totale di peso di tutti i materiali di processo e di packaging acquistati.</p>
+                        <p>NON SOLO SAPER FARE, MA SAPER FAR BENE E...RESPONSABILE</p>
+                        <p>LA SFIDA CHE AFFRONTIAMO OGNI GIORNO:  Offrire ai nostri clienti di tutte le nazioni servite blend unici, creati unendo sapientemente oli selezionati da olive sane e raccolte al giusto punto di maturazione, e specialità alimentari buone come fatte in casa con pochi ingredienti genuini e naturali, che soddisfino i gusti e le esigenze dei nostri clienti: questi sono gli obiettivi che da oltre 110 anni abbiamo deciso di perseguire quotidianamente. Impegni che abbiamo voluto far diventare fondanti per la nostra attività, tanto da inserirli all'interno del nostro Statuto di Società Benefit come nostre Finalità di Beneficio Comune, insieme al perseguimento della sostenibilità a 360° per fornitori, clienti, materie prime e materiali di pack.</p>
+                        <p>IL CAMBIAMENTO CHE STIAMO APPORTANDO: Nel corso del 2023 abbiamo sviluppato ben 9 nuovi prodotti ma non solo…. Raccogliendo la sfida di rispondere sempre meglio alle esigenze dei clienti, da una parte, e di studiare pack sempre più funzionali e sostenibili, dall'altro, per il progetto di rivisitazione del pack delle nostre Paste di Gragnano, in vendita all'estero, abbiamo deciso di partire proprio dal punto di vista dei clienti. È nato così un piccolo questionario che è stato inviato a tutti i consumatori della nostra pasta. I risultati hanno promosso a pieni voti la nostra proposta di eliminare la finestra in plastica, che permetteva di poter “vedere” il prodotto, in favore di una confezione 100% in carta riciclabile che, ad oggi, è già entrata in produzione. Quest'anno, poi, abbiamo intrapreso un progetto sfidante di ampio respiro, che riguarderà molte delle nostre specialità. L'obiettivo è quello di valorizzare l'ampiezza e la profondità della nostra offerta, portando ogni categoria di prodotto a comunicare ai nostri clienti, con chiarezza e immediatezza, la sua specificità ed eccellenza insieme al valore della firma “Fratelli Carli” in termini di qualità, serietà e sostenibilità. Un lavoro impegnativo che proseguirà senza sosta nei prossimi mesi per arrivare quanto prima possibile nelle case dei nostri clienti.</p>
+                        <p>CHE COSA ABBIAMO IMPARATO: Da sempre, la nostra azienda si distingue per la serietà e per l'attenzione verso i suoi clienti e verso il mondo che ci circonda. La chiarezza di intenti della nostra “governance di sostenibilità”, costruita in questi anni e condivisa con tutte le risorse interne e con l'intera supply chain, ha saputo amplificare la forza di questi valori e mettere in campo, attraverso un convinto lavoro di squadra, un processo di innovazione costante con risultati spesso sorprendenti.</p>
+                        <p>I DATI DI SOSTENIBILITA' E L'INNOVAZIONE DEL NOSTRO ESG DATA MODELING</p>
+                        <p>LA SFIDA CHE ABBIAMO AFFRONTATO: Nel cuore della nostra missione volta alla sostenibilità, abbiamo intrapreso un ambizioso percorso interno per la costruzione di una governance strutturata dei dati ESG (ambientali, sociali e di governance). Questi dati, necessari per una governance di sostenibilità efficiente, sono diffusi trasversalmente in ogni funzione aziendale e spesso sono di non facile reperimento. Per questo dunque era necessario un passo in avanti affinché tutte queste informazioni diventassero disponibili attraverso un processo condiviso e digitalizzato.</p>
+                        <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: Siamo partiti dall'accurata mappatura di tutti i dati di sostenibilità dell'azienda con evidenza della fonte, della funzione responsabile, delle interconnessioni, oltre che dei criteri di accettabilità e certificabilità. Da questo punto fermo è partito il primo step del progetto di "modellazione dei dati", che ha preso in considerazione il set di dati relativi al pilastro dei Materiali e Prodotti. Attraverso un lavoro di squadra dedicato e coordinato, è stato definito il tracciato dei dati ESG per tutti i materiali, le materie prime ed i prodotti finiti acquistati e venduti dall'azienda, in modo da garantirne integrità e accuratezza dell'informazione. Nei prossimi mesi è prevista l'implementazione di tutte queste dettagliate informazioni sui sistemi aziendali e la realizzazione di un Data Warehouse che ne permetterà la completa integrazione, restituendo le analisi e gli indici richiesti dalla governance della sostenibilità.</p>
+                        <p>CHE COSA ABBIAMO IMPARATO: Ciò che rende questo progetto unico è il fatto che tutto il lavoro nasce e si sviluppa all'interno dell'azienda con la collaborazione sinergica di diverse aree aziendali: dall'amministrazione all'ufficio acquisti, dalla logistica ai sistemi informativi, dal marketing di prodotto all'ufficio tecnico, dai reparti produttivi alla funzione sostenibilità. Insieme siamo riusciti a sfruttare al meglio le nostre competenze e le nostre risorse e a condividere non solo le informazioni, ma anche lo scopo e lo spirito del progetto e questo ha fatto crescere ancora di più la nostra sensibilità verso questi temi. Ed è solo l'inizio perché il nostro obiettivo finale è arrivare a costruire un sistema completo di ESG data governance e data modeling per tutti i dati di sostenibilità aziendale.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Quarta colonna: Filiera di Fornitura-->
+            <div class="row mt-4">
+                <!--Righe  di contenuto con colonne per ogni pilastro-->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/filiera-fornitura.jpg" alt="Fratelli Carli - Filieri di Fornitura">
+                    <!--Titolo del pilastro-->
+                    <h4>Filiera di Fornitura</h4>
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo4" aria-expanded="false">
+                    </button>
+                    <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                    <div id="testo4" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro"Filiera di Fornitura-->
+                        <p>Una relazione di valore consolidata negli anni, è quella che ci lega ai nostri fornitori, e che ci ha consentito di essere punto di riferimento per l'eccellenza dei nostri prodotti. Siamo consapevoli che senza il loro aiuto il nostro impegno per la sostenibilità e la qualità totale non avrebbero futuro. Per questo abbiamo avviato il progetto dei Distretti e dei Codici Fratelli Carli: strumenti fondamentali per condividere un percorso fatto di valori comuni e, soprattutto, di azioni concrete.</p>
+                        <p>Marta Gorlero - Responsabile Marketing e Sviluppo Prodotto - Gino De Andreis - Responsabile Controllo Qualità - Alessandro Anemone - Responsabile Ufficio Acquisti</p>
+                        <p>OBIETTIVI/RISULTATI 2023</p>
+                        <p>FILIERA DI FORNITURA: Trasformare il Distretto di Bontà in Distretto "Benefit" - Ampliare il perimetro del Distretto dei Trasporti ai nuovi fornitori di servizi logistici - Coinvolgere il Distretto dei Trasporti sul progetto “Carbon Neutrality” - Completare, con tutta la supply chain, la raccolta dei KPI di sostenibilità condivisi nei rispettivi Codici utilizzando gli strumenti identificati - Portare al 55% il numero di fornitori rilevanti coinvolti nei Codici e valutati secondo criteri ambientali e sociali.</p>
+                        <p>                      46,2% i fornitori coinvolti nei Codici dell'Olivo, di Bontà, della Bellezza, e delle Consegne sul totale dei fornitori rilevanti - 60% le analisi di sostenibilità del ciclo di vita (SLCA) completate a quattro mani con i fornitori - 76% la quota del budget totale di approvigionamento speso sui fornitori locali situati in Italia - 4 i fornitori Certificati B Corp o Società Benefit nella nostra catena di fornitura - 3 i Codici di Sostenibilità condivisi con i nostri fornitori di componenti, prodotti finiti, olive, olio, logistica</p>
+                        <p>UNA FILIERA DI FORNITURA DALLO SPIRITO "BENEFIT"</p>
+                        <p>LA SFIDA CHE ABBIAMO AFFRONTATO: Fin dal 2013 condividiamo con tutti i nostri fornitori di prodotti finiti, componenti e servizi il Codice di Bontà, un documento che individua i valori, gli impegni e gli obiettivi comuni in tema di sostenibilità. Questo percorso ha permesso all'intero “Distretto” di crescere insieme e di porsi sempre nuovi traguardi. Con questo spirito, nel corso del 2023, abbiamo dato vita ad un progetto sfidante ed innovativo con l'ambizione di creare un Distretto Benefit, ispirato ai principi e alla struttura delle Società Benefit.</p>
+                        <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: Con le oltre 60 aziende fornitrici che compongono il Distretto abbiamo individuato quelle “Finalità di Beneficio Comune” che sapessero guardare agli ambiti fondamentali delle nostre attività: produzione, benessere dei dipendenti, utilizzo delle risorse. Nel corso dell'ultima “Giornata della Bontà”, l'annuale incontro che si svolge nella nostra sede di Imperia, con gli oltre 100 rappresentanti delle aziende del Distretto abbiamo poi identificato, con specifiche modalità di lavoro in team, le azioni da mettere in campo per impattare positivamente ciascuna singola Finalità di Beneficio Comune. Al termine della giornata di lavoro sono state votate le 5 migliori azioni: con le oltre 60 aziende fornitrici che compongono il Distretto abbiamo individuato quelle “Finalità di Beneficio Comune” che sapessero guardare agli ambiti fondamentali delle nostre attività: produzione, benessere dei dipendenti, utilizzo delle risorse. Nel corso dell'ultima “Giornata della Bontà”, l'annuale incontro che si svolge nella nostra sede di Imperia, con gli oltre 100 rappresentanti delle aziende del Distretto abbiamo poi identificato, con specifiche modalità di lavoro in team, le azioni da mettere in campo per impattare positivamente ciascuna singola Finalità di Beneficio Comune. Al termine della giornata di lavoro sono stato votate le 5 migliori azioni: - un Codice Etico delle materie prime e dei prodotti finiti - uno strumento per lo scambio di informazioni sugli impatti della produzione - un censimento delle pratiche virtuose rivolte ai dipendenti - un “mercato” sostenibile del Distretto - un tavolo permanente per l'energia.</p>
+                        <p>CHE COSA ABBIAMO IMPARATO: Questo progetto, davvero sfidante e impegnativo, ha reso ancora più radicato e concreto il rapporto con la nostra filiera di fornitura: non solo fornitori e acquirenti ma partner nel voler lasciare un'impronta positiva nel mondo. Una collaborazione senza precedenti, a cui abbiamo creduto fortemente, che proseguirà anche nel corso del 2024 con i Tavoli di Lavoro tematici che dovranno daranno forma alle 5 azioni più votate dal Distretto.</p>
+                    </div>
+                </div>
+                <!--Quinta colonna: Energia e Risorse-->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/energia-risorse.jpg" alt="Fratelli Carli - Energia e Risorse">
+                    <!--Titolo del pilastro-->
+                    <h4>Energia e Risorse</h4>
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo5" aria-expanded="false">
+                    </button>
+                    <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                    <div id="testo5" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro"Energia e Risorse"-->                    
+                        <p> Ci impegniamo a ridurre costantemente la nostra impronta energetica nelle fasi di produzione e logistica. Sul fronte della produzione abbiamo creato un modello di risparmio e riduzione dell'impronta di carbonio basato sulla sinergia fra tre azioni fondamentali: utilizzo di energia elettrica totalmente derivata da fonti rinnovabili, autoproduzione attraverso impianto fotovoltaico, iniziative per la riduzione dei consumi.
+                        <p> Federico Calzamiglia - Direttore Operation</p>
+                        <p>OBIETTIVI/RISULTATI 2023</p>
+                        <p>ENERGIA E RISORSE: - Aggiornare e validare gli inventari delle emissioni di Scope 1, Scope 2 e Scope 3 - Definire azioni misurabili di mitigazione dell'impatto dell'azienda sul cambiamento climatico - Implementare e ampliare il perimetro del nuovo Sistema di gestione Integrato sicurezza e ambiente - Compensare l'impatto ambientale di tutte le consegne a domicilio dei clienti in tutti i paesi serviti - Progettare un corso di Ecodrive per i nostri autisti del trasporto primario - Mantenere la percentuale di rifiuti inviati a recupero superiore al 90% sul totale dei rifiuti prodotti.</p>
+                        <p>                   - 100% energia elettrica utilizzata certificata da fonti rinnovabili - 17 le tonnellate di CO2 (Scope 1 e Scope 2) per milione di fatturato - 89% i rifiuti inviati al recupero sul totale dei rifiuti - 987.867 kWh l'energia elettrica prodotta dall'impianto fotovoltaico di proprietà - 100% le emissioni di CO2 generate dall'intera logistica di consegna Italia ed estero che saranno compensate - 2% la diminuzione dell'indice dei rifiuti generati sul valore della produzione nel 2023 rispetto al 2022 - 19% l'energia elettrica da fonte rinnovabile autoprodotta e consumato rispetto al totale dell'energia elettrica consumata - -26% le emissioni totali di CO2 per Scope 1 e Scope 2</p>
+                        <p>IL PROGETTO DI UN NUOVO MAGAZZINO DIVENTA LO SPAZIO PER FAR CRESCERE L'INNOVAZIONE SOSTENIBILE</p>
+                        <p>LA SFIDA CHE ABBIAMO AFFRONTATO: Quando abbiamo iniziato a lavorare al progetto del nostro nuovo impianto di etichettatura, inscatolamento e pallettizzazione per le specialità in  vaso ci è stato chiaro, fin da subito, come avrebbe potuto diventare una grande opportunità di cambiamento. Al di là del suo perimetro squisitamente industriale, abbiamo riflettuto su come avrebbe potuto impattare su quasi tutti i nostri Pilastri di Sostenibilità: dall'Energia ai Materiali e Prodotti, dalla Filiera di Fornitura alle Persone.</p>
+                        <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: È nato un tavolo di confronto interno che ha visto lavorare in team l'Ufficio Tecnico, i Responsabili dei magazzini, il Marketing di Prodotto, l'Ufficio Acquisti, la Logistica, i nostri consegnatari e tutti i fornitori coinvolti. Le parole d'ordine sono state ottimizzare e semplificare, seguendo il flusso di ogni processo collegato, a monte o a valle, all'interno o all'esterno dell'azienda, con il nuovo impianto.  Abbiamo lavorato per riprogettare completamente il nostro pack, passando da oltre 60 referenze personalizzate, con inchiostri e vernici, per ogni singolo prodotto a sole 5 tipologie di scatole. Ognuna di esse porta come innovazione un nuovo disegno tecnico, un solo colore, una grafica che parla di sostenibilità e una personalizzazione con il nome del prodotto che può ora avvenire in linea, grazie ad un innovativo sistema di incisione al laser. I risultati ottenuti con il nostro impegno per la riprogettazione: - oltre 3.5 quintali di inchiostri evitati ogni anno - circa 46 tonnellate di cartone risparmiate ogni anno. Abbiamo ripensato la nostra organizzazione, i nostri processi e la logistica in entrata in modo da poter lavorare con il nuovo impianto anche tutte le referenze in vaso che arrivavano già inscatolate. Il risultato ottenuto con il nostro sforzo per la riorganizzazione: - -50% di viaggi in entrata da fornitore. Abbiamo raccolto, infine, al nostro interno e presso tutti i fornitori coinvolti, anche le più piccole informazioni di dettaglio, così da poter misurare in modo affidabile, con l'analisi del ciclo di vita Life Cycle Assessment (LCA), il miglioramento ottenuto in termini di impatto ambientale con il nostro progetto. Il risultato della nostra analisi conferma il successo del lavoro del team: - -40% l'impatto ambientale del nuovo pack, in tutte le categorie prese in considerazione dall'analisi LCA (cambiamenti climatici - riduzione dello strato di ozono - acidificazione - eutrofizzazione - esaurimento della risorsa idrica - formazione dello smog fotochimico).</p>
+                        <p>CHE COSA ABBIAMO IMPARATO: Questa sfida era davvero complessa: non era facile, infatti, trovare in ogni ambito il giusto punto di equilibrio tra le esigenze dell'efficienza operativa e gli impatti positivi per la sostenibilità e il risultato non era per nulla scontato. La stretta collaborazione tra tutte le parti coinvolte, la chiarezza degli obiettivi che guardavano ai nostri Pilastri di Sostenibilità e il coraggio di scegliere strade innovative, hanno rappresentato il vero punto di svolta di questa nostra “storia di sostenibilità”. Gli ostacoli affrontati ed i fattori di successo che abbiamo evidenziato, hanno fatto diventare questo progetto anche uno strumento di storytelling, utilizzato nella formazione interna sulla sostenibilità, che ha portato un coinvolgimento ed una attenzione delle persone superiore alle aspettative.</p>
+                    </div>
+                </div>
+                <!--Sesta colonna: Cultura e Tradizione Meditteranea -->
+                <div class="col-md-4">
+                    <!--Immagine rappresentativa-->
+                    <img src="img/cultura-tradizione.jpg" alt="Fratelli Carli - Cultura e Tradizione Mediterranea">                    <!--Titolo del pilastro-->
+                    <h4>Cultura e Tradizione Mediterranea</h4>
+                    <!--Pulsante per mostrare o nascondere il testo-->
+                    <button class="btn btn-primary toggle-text" data-bs-toggle="collapse" data-bs-target="#testo6" aria-expanded="false">
+                    </button>
+                    <!--Contenitore per il testo dopo aver cliccato il pulsante che mostra il testo-->
+                    <div id="testo6" class="collapse full-width-collapse">
+                        <!--Descrizione dettagliata del pilastro"Cutura e Tradizione Mediterranea-->
+                        <p> L'olivo e il prezioso olio che ci regala sono i simboli del Mediterraneo: il luogo d'origine e il cuore delle civiltà che hanno dato vita al nostro mondo. Da questa storia nasce la passione e la “ragione” del nostro essere impresa: contribuire a salvaguardare e tramandare tradizioni e saperi che hanno creato una cultura dell'alimentazione di valore universalmente riconosciuto.</p>
+                        <p>Claudia Carli - Responsabile Comunicazione Corporate</p>
+                        <p>OBIETTIVI/RISULTATI 2023</p>
+                        <p>CULTURA E TRADIZIONE: - Diffondere la cultura dell'olivo e dell'olio di oliva e della tradizione alimentare del Mediterraneo - Divulgare la cultura della Sostenibilità </p>
+                        <p>                      - 100% gli Empori che riportano informazioni sulla sostenibilità - +1300 gli studenti che approfondito il loro programma di studi nelle sale del Museo dell'Olivo Carlo Carli - 12 i corsi di cucina nell'Emporio di Imperia - 16.679 i visitatori del Museo dell'Olivo Carlo Carli - +4.846.000 le DEM sui temi della sostenibilità inviate ai clienti</p>
+                        <p>L'ORGINE SEI TU</p>
+                        <p>LA SFIDA CHE ABBIAMO AFFRONTATO: La nostra storia ci porta ad essere punto di riferimento nel mondo dell'olio e l'olio è il fondamento di quella cultura e di quella tradizione mediterranea che ci impegniamo a diffondere e preservare in ogni sua sfaccettatura. Tanto da far diventare questo obiettivo uno dei nostri cinque Pilastri di Sostenibilità. Riuscire a creare un'esperienza capace di trasmettere le peculiarità e la ricchezza di questo prodotto, esplorandone tutti i segreti, e di far scoprire le caratteristiche uniche del lavoro dell'oleario è la sfida che, oltre un anno fa, abbiamo deciso di affrontare. </p>
+                        <p>IL CAMBIAMENTO CHE ABBIAMO APPORTATO: Per progettare e realizzare un'esperienza capace di portarci a condividere con i nostri clienti il sapere e la cultura dell'olio di oliva e arrivare ad un risultato che volevamo fosse davvero sorprendente a livello sensoriale ed emozionale, abbiamo attivato un team aziendale dedicato. Questo ci ha permesso di mettere a fattor comune tutte le competenze e l'esperienza delle nostre persone e della famiglia, con una modalità agile e con strumenti innovativi. L'”Experience Map” ci ha permesso di esplorare le varie fasi della relazione tra la nostra azienda e i suoi interlocutori, clienti o non clienti, analizzando in ciascuna di queste i loro pensieri, aspettative, necessità in relazione all'esperienza che stavamo progettando. La Piramide dei livelli ha poi saputo tradurre questa analisi nella struttura di un progetto capace di coinvolgere la mente, l'immaginazione, i sensi e le emozioni dei partecipanti. All'interno dei nostri Empori, sotto la guida attenta del nostro assaggiatore professionista, capo panel Federolio 1, i partecipanti possono scoprire in maniera semplice ma totalmente coinvolgente, le peculiarità e la ricchezza del sapere dell'oleario: le cultivar con la loro storia, le diverse provenienze, i segreti dell'assaggio e l'arte di saper creare un olio perfetto, armonizzando i sapori e i profumi di oli diversi unendoli sapientemente…ma non solo. Ciascuno di loro diventa anche, vivendo la parte sensoriale dell'esperienza, per un attimo, assaggiatore e crea il suo “blend” di olio unico ed esclusivo.</p>
+                        <p>CHE COSA ABBIAMO IMPARATO:  Guardare al prodotto che è il protagonista del nostro lavoro quotidiano da oltre un secolo con gli occhi di chi ne vuole raccontare la storia, le peculiarità, le ricchezze integrando le competenze uniche di cui dispone l'azienda, ci ha permesso di crescere ancora. Tutto il team, infatti, ha saputo condividere le specifiche professionalità dei singoli, mettendole a fattor comune, per riuscire a progettare un'attività unica nel suo genere e dare a tutti la possibilità di conoscere e vivere il mondo dell'olio in modo originale e immersivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sezione Download dei report -->
+    <section id="downloads" class="section text-center  ">
+        <div class="container">
+            <!--Titolo della sezione-->
+            <h2 class="fw-bold">Download Report Sostenibilità</h2>
+            <!--Breve descrizione della sezione-->
+            <p>Scarica i documenti relativi alla Sostenibilità</p>
+            <!--Lista dei link per il download dei report-->
+            <ul class="d-flex list-unstyled justify-content-center">
+                <!--Collegamento al report 2023-->
+                <li><a href="report/report2023.pdf" download class="btn btn-outline-primary me-3"><i class="fa fa-download"></i>Report 2023</a></li>
+                <!--Collegamento al report 2022-->
+                <li><a href="report/report2022.pdf" download class="btn btn-outline-primary me-3"><i class="fa fa-download"></i>Report 2022</a></li>
+                <!--Collegamento al report 2021-->
+                <li><a href="report/report2021.pdf" download class="btn btn-outline-primary me-3"><i class="fa fa-download"></i>Report 2021</a></li>
+                <!--Collegamento al report 2020-->
+                <li><a href="report/report2020.pdf" download class="btn btn-outline-primary me-3"><i class="fa fa-download"></i>Report 2020</a></li>
+        </div>
+    </section>
+    <!--Footer della pagina-->
+    <footer class="header-footer">
+        <!--Paragrafo di copyright-->
+        <p>© 2025 Copyright 2023 Fratelli Carli S.p.A. Società Benefit - All Rights Reserved - C.F.: 02906460015 - P.IVA: 00395540081 | Iscritta al Registro delle Imprese della C.C.I.A.A. di Imperia n° 02906460015 - R.E.A. n° 86928 - Capitale Sociale 6.000.000,00 Euro i.v.</p>
+       <!--Immagine del logo storico-->
+        <img src="img/logo-marchio-storico.png" alt="logo storico Fratelli Carli">
+        <!--Immagine del logo furgone-->
+        <img src="img/logo-furgone.png" alt="logo furgone Fratelli Carli">
+    </footer>
+    <!-- Script Bootstrap e personalizzato -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

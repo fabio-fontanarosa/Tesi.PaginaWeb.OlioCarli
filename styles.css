@@ -1,0 +1,101 @@
+/*stile generale del corpo della pagina*/
+body {
+    font-family: 'Poppins', sans-serif; /*Font pricipale della pagina*/
+    scroll-behavior: smooth; /*abilita lo scorrimento fluido*/
+    background-color: #f8f9fa; /*Colore di sfondo della pagina grigio chiaro*/
+    
+}
+/*Sezione generica margine superiore per inserimento del padding*/
+.section {
+    padding-top: 65px; /*Spazio extra sopra le sezioni*/
+    
+}
+/*Stile per la sezione downloads*/
+#downloads {
+    padding-bottom: 15px; /*Spazio extra sotto la sessione*/
+    
+}
+/*Stile sfondo per la navbar*/
+.navbar {
+    background-color: #718473;/*Colore verde per la navbar*/
+    
+}
+/*Stile testo per la navbar*/
+.navbar-brand, .nav-link {
+    color: white !important; /*Colore bianco per il testo della navbar*/
+    font-size: 1.4em; /*Testo più grande per una maggiore leggibilità (1.4 maggiore alla dimensione predefinita)*/
+}
+/*Effetto hover per i link di navigazione*/
+.navbar-nav .nav-link:hover {
+    color: #f8d210 !important; /*Effetto di evidenziazione di colore giallo al passaggio del mouse sopra la scritta*/
+    font-size: 1.4em; /*Mantiene la stessa grandezza del testo anche durante l'hover*/
+}
+/*Allineamento a sinistra per il testo di descrizione delle colonne*/
+.col-md-4 .descrizione{
+    text-align: left; /*Allinea il testo a sinistra*/
+}
+
+/*Stile dei pulsanti outline primari*/
+.btn-outline-primary {
+    border-color: #718473; /*bordo colore verde*/
+    color: #718473; /*colore verde*/
+    text-align: center; /*testo centrato*/
+}
+/*Effetto hover dei pulsanti outline primari*/
+.btn-outline-primary:hover {
+    background-color:#718473; /*Riempimento verde al passaggio del mouse*/
+    color: white; /*Testo bianco*/
+}
+/*Stile dei pulsanti standard*/
+.btn{
+    background-color: #718473;/*Sfondo verde*/
+    border-color: white;/*Bordo bianco*/
+    color:white; /*Testo bianco*/
+}
+/*Effetto hover per i pulsanti standard*/
+.btn:hover{
+    background-color: white; /*Riempimento bianco al passaggio del mouse*/
+    border-color: #718473; /*Bordo verde*/
+    color: #718473; /*Testo verde*/
+}
+/* Stato predefinito del tasto Toogle-text */
+.toggle-text::before {
+    content: "Mostra Testo"; /*Mostra "Mostra Testo" di default*/
+    }
+
+/* Quando il collapse è aperto, cambia in "Nascondi Testo" */
+.toggle-text[aria-expanded="true"]::before {
+content: "Nascondi Testo";
+}
+    
+
+/*Stile dei titoli h4*/
+h4 {
+    margin-top: 10px; /*spazio sopra al titolo*/
+    margin-bottom: 10px; /*spazio sotto al titolo*/
+    text-align: center; /*Testo del titolo h4 centrato*/
+    
+}
+
+
+/*Stile del contenitore collpse a larghezza piena*/
+.full-width-collapse {
+    position: absolute; /*Posizionamento assoluto per estendere sopra il contenitore padre*/
+    left: 0; /*Allineamento a sinistra*/
+    width: 100vw; /*larghezza completa del viewport*/
+    background-color: #718473; /*Sfondo verde*/
+    padding-top: 20px; /*Spaziatura interna in alto*/
+    padding-left: 60px; /*Spaziatura interna a sinistra*/
+    padding-right: 60px; /*Spaziatura interna a destra*/
+    z-index: 1000; /*assicura che venga visualizzato sopra altri contenuti*/
+    text-align:left; /*Allineamento testo a sinistra all'interno del contenitore*/
+    color:white;/*Testo bianco*/
+    
+  }
+/*Stile condiviso per header e footer*/
+  .header-footer {
+    background-color: #718473; /*Sfondo verde*/
+    color: white; /*Testo bianco*/
+    padding: 25px; /*Spaziatura interna uniforme in tutte le direzioni*/
+    text-align: center; /*Allineamento centrato del testo header e footer*/
+  }
